@@ -33,15 +33,24 @@ let squadre = [
 ];
 
 
+
+
+let arrayNomieFalli = [];
+
 for (let i = 0; i < squadre.length; i++) {
     let squadra = squadre[i];
 
-    if (squadra.falliSubiti || squadra.puntiFatti == 0) {
         squadra.falliSubiti = Math.floor(Math.random() * 100);
         squadra.puntiFatti = Math.floor(Math.random() * 100);
-    }
+        console.log(squadra);
+
+        let {nome, falliSubiti} = squadra;
+
+        arrayNomieFalli.push(nome, falliSubiti);
+          
     
-    console.log(squadra);
 }
+
+console.log(arrayNomieFalli);
 
 /* Math.floor(Math.random() * 100); */
