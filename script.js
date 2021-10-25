@@ -35,10 +35,24 @@ let biciclette = [
     }
 ]
 
+let pesoBici = []
+
 for (let i = 0; i < biciclette.length; i++) {
 
-        for (const key in biciclette) {
-            console.log(biciclette[key]);
-        }
+        let biciSingola = biciclette[i];
+        console.log(biciSingola);
+
+        console.log(biciSingola.peso);
+
+        console.log(parseInt(biciSingola.peso));
+
+        pesoBici.push(parseInt(biciSingola.peso)); 
+        
+
     
 }
+
+console.log(pesoBici);
+
+document.querySelector(".txt").innerHTML = Math.min(...pesoBici);
+
