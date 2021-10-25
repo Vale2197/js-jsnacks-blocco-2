@@ -48,11 +48,10 @@ for (let i = 0; i < biciclette.length; i++) {
 
         pesoBici.push(parseInt(biciSingola.peso)); 
         
-
-    
 }
 
 console.log(pesoBici);
 
 document.querySelector(".txt").innerHTML = Math.min(...pesoBici);
+
 
